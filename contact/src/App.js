@@ -2,11 +2,15 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
-} from 'react-router-dom';
+  Route,}
+   from 'react-router-dom';
 import Contact from './pages/Contact'
 import ContactDetail from './pages/ContactDetail'
+
+// const arr = [1,2,3].map(function (item) {
+
+// })
+console.log(window.location.pathname)
 
 export default function App() {
   return (
@@ -14,7 +18,7 @@ export default function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Contact}></Route>
-          <Route path="/detail/placeholder" component={ContactDetail}></Route>
+          <Route path="/contacts/:id" component={ContactDetail}></Route>
         </Switch>
       </div>
     </Router>
