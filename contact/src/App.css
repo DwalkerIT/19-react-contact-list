@@ -27,6 +27,11 @@ body {
   border-radius: 50%;
 }
 
+.singleImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
 .name {
   margin-left: 20px;
   list-style-type: none;
