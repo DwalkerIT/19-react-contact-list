@@ -1,12 +1,17 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import contactJSON from "../contacts.json";
 export default function ContactDetail(props) {
   const id = props.match.params.id;
   const currentContact = contactJSON.find((contact) => contact.id == id);
-  const [contact] = useState(currentCOntact);
+  const [contact] = useState(currentContact);
   console.log(contact);
+  console.log(props);
   return (
     <div>
+      <Link to="/">
+        <h3>back</h3>
+      </Link>
       <p>
         {contact.name.title} {contact.name.first} {contact.name.last}
       </p>

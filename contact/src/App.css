@@ -1,4 +1,38 @@
 * {
   margin: 0;
   padding: 0;
+  position: relative;
+}
+body {
+  width: 100%;
+}
+.myPeeps {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.peepsBanner {
+  height: 50px;
+  background-color: rgb(61, 156, 93);
+  color: white;
+}
+
+.contact {
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.name {
+  margin-left: 20px;
+  list-style-type: none;
+  color: black;
+}
+
+.test:link {
+  text-decoration: none;
 }
