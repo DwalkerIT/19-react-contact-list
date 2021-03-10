@@ -8,7 +8,7 @@ export default function ContactDetail(props) {
   console.log(contact);
   console.log(props);
   return (
-    <div>
+    <div classname="singleView">
       <Link to="/">
         <h3>back</h3>
       </Link>
