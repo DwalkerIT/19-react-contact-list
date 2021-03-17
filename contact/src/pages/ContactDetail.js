@@ -8,28 +8,31 @@ export default function ContactDetail(props) {
   console.log(contact);
   console.log(props);
   return (
-    <div classname="singleView">
-      <Link to="/">
-        <h3>back</h3>
-      </Link>
-      <div>
-        <img className="singleImage" src={contact.picture.thumbnail}></img>
+    <>
+      <h1>header</h1>
+      <div className="singleView">
+        <Link to="/">
+          <h3>back</h3>
+        </Link>
+        <div className="test">
+          <img className="singleImage" src={contact.picture.thumbnail}></img>
+        </div>
+        <p>
+          <i class="fas fa-user"></i>
+          {contact.name.title} {contact.name.first} {contact.name.last}
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i>
+          {contact.email}
+        </p>
+        <i class="fas fa-mobile"></i>
+        <a href={"tel:" + contact.phone}>{contact.phone}</a>
+        <p>
+          <i class="fas fa-globe-americas"></i>
+          {contact.location.city} {contact.location.state}{" "}
+          {contact.location.zip} {contact.location.country}
+        </p>
       </div>
-      <p>
-        <i class="fas fa-user"></i>
-        {contact.name.title} {contact.name.first} {contact.name.last}
-      </p>
-      <p>
-        <i class="fas fa-envelope"></i>
-        {contact.email}
-      </p>
-      <i class="fas fa-mobile"></i>
-      <a href={"tel:" + contact.phone}>{contact.phone}</a>
-      <p>
-        <i class="fas fa-globe-americas"></i>
-        {contact.location.city} {contact.location.state} {contact.location.zip}{" "}
-        {contact.location.country}
-      </p>
-    </div>
+    </>
   );
 }
