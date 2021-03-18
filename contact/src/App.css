@@ -1,9 +1,10 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   position: relative;
   text-decoration: none;
   color: black;
+  background-color: white;
 }
 body {
   width: 100%;
@@ -35,6 +36,7 @@ body {
   border: 1px solid rgb(0, 0, 0);
   display: flex;
   align-items: center;
+  width: 100px;
 }
 
 .image {
@@ -46,6 +48,8 @@ body {
   width: 150px;
   border-radius: 50%;
   background-color: rgb(61, 156, 93);
+  padding: 20px;
+  align-items: center;
 }
 
 .name {
